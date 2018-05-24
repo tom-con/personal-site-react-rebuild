@@ -1,0 +1,10 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "no-use-before-define": "off"
+    },
+    "env": {
+        "browser": true,
+        "node": true
+  }
+}
