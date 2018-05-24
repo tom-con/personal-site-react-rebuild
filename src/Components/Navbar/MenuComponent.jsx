@@ -10,15 +10,18 @@ import {
 
 MenuComponent.propTypes = {
   children: PropTypes.objectOf(PropTypes.any).isRequired,
+  handleToggle: PropTypes.instanceOf(PropTypes.func).isRequired,
+  isOpen: PropTypes.bool.isRequired,
 };
 
-export default function MenuComponent({ children }) {
+
+export default function MenuComponent({ children, handleToggle, isOpen }) {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
+        <NavbarBrand href="/">Tom Conchie</NavbarBrand>
+        <NavbarToggler onClick={handleToggle} />
+        <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             {children}
           </Nav>
