@@ -1,0 +1,32 @@
+## Git
+.git
+
+## JS Deps / NPM
+/node_modules
+npm-debug.log
+yarn-error.log
+
+## IDEs
+.idea
+.vscode
+
+## ide-helper
+.phpstorm.meta.php
+_ide_helper.php
+
+## Vagrant
+/.vagrant
+Homestead.json
+Homestead.yaml
+
+## Local ENV Files
+.env
+*.local.env
+
+## Mac
+.DS_Store
+
+## Misc
+.tmp
+.build
+.elasticbeanstalk

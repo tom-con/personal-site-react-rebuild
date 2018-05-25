@@ -1,16 +1,26 @@
 import React from 'react';
-import { Route } from 'react-router-dom'
-import Menu from '../Navbar/MenuContainer'
+import { Route } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import Menu from '../Navbar/MenuContainer';
+import Header from '../Header/HeaderComponent';
 
-const LayoutRoute = ({component: Component, ...rest}) => {
-    return (
-        <Route {...rest} render={matchProps => (
-            <div>
-                <Menu />
-                <Component {...matchProps} />
-            </div>
-        )}/>
-    )
+LayoutRoute.propTypes = {
+  component: PropTypes.func.isRequired,
+};
+
+export default function LayoutRoute({ component: Component, ...rest }) {
+  return (
+    <Route
+      {...rest}
+      render={matchProps => (
+        <div>
+          <header id="header">
+            <Header />
+            <Menu />
+          </header>
+          <Component {...matchProps} />
+        </div>
+        )}
+    />
+  );
 }
-
-export default LayoutRoute
