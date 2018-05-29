@@ -6,25 +6,23 @@ Dropdown.propTypes = {
   name: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
   right: PropTypes.bool,
-  left: PropTypes.bool,
 };
 
 Dropdown.defaultProps = {
   right: true,
-  left: false,
 };
 
 export default function Dropdown({
-  name, items, right, left,
+  name, items, right,
 }) {
   return (
     <UncontrolledDropdown nav inNavbar>
       <DropdownToggle nav caret>
         {name}
       </DropdownToggle>
-      <DropdownMenu right={right} left={left} >
+      <DropdownMenu right={right} >
         {items.map(item => (
-          <DropdownItem>
+          <DropdownItem key={item.name}>
             <NavLink href={item.to}>
               {item.name}
             </NavLink>
