@@ -192,10 +192,10 @@ h5 {
   font-size: 1.25rem;
 }
 a {
-  color: #bd1550;
+  color: #f04c86;
 }
 a:hover {
-  color: #e93675;
+  color: #b01249;
 }
 .lead {
   font-weight: 300;
@@ -237,6 +237,7 @@ a:hover {
   overflow: hidden;
   border: 9px solid rgba(0, 0, 0, 0.05);
   margin: 0 auto;
+  border-radius: 90px;
 }
 #head .title {
   font-family: Alice, Georgia, serif;
@@ -273,6 +274,15 @@ a:hover {
   font-size: 1rem;
   margin: 15px 0 0;
 }
+
+#head .icon-container {
+  background: rgba(255, 255, 255, 0.447)
+}
+
+#head .icon {
+  padding: 10px;
+}
+
 /*********************************************************************
 
 
