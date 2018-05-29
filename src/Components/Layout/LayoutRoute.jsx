@@ -6,20 +6,27 @@ import Header from '../Header/HeaderComponent';
 
 LayoutRoute.propTypes = {
   component: PropTypes.func.isRequired,
+  classes: PropTypes.string,
 };
 
-export default function LayoutRoute({ component: Component, ...rest }) {
+LayoutRoute.defaultProps = {
+  classes: '',
+};
+
+export default function LayoutRoute({ component: Component, classes, ...rest }) {
   return (
     <Route
       {...rest}
       render={matchProps => (
-        <div>
-          <header id="header">
-            <Header />
-            <Menu />
-          </header>
-          <Component {...matchProps} />
-        </div>
+        <body className={classes}>
+          <div>
+            <header id="header">
+              <Header />
+              <Menu />
+            </header>
+            <Component {...matchProps} />
+          </div>
+        </body>
         )}
     />
   );
