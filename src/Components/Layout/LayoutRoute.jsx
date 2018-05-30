@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Menu from '../Navbar/MenuContainer';
 import Header from '../Header/HeaderComponent';
+import Footer from '../Footer/FooterComponent';
 
 LayoutRoute.propTypes = {
   component: PropTypes.func.isRequired,
@@ -26,6 +27,7 @@ export default function LayoutRoute({ component: Component, classes, ...rest }) 
             </header>
             <Component {...matchProps} />
           </div>
+          <Footer />
         </body>
         )}
     />
