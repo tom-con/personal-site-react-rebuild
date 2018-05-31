@@ -14,21 +14,19 @@ LayoutRoute.defaultProps = {
   classes: '',
 };
 
-export default function LayoutRoute({ component: Component, classes, ...rest }) {
+export default function LayoutRoute({ component: Component, ...rest }) {
   return (
     <Route
       {...rest}
       render={matchProps => (
-        <body className={classes}>
-          <div>
-            <header id="header">
-              <Header />
-              <Menu />
-            </header>
-            <Component {...matchProps} />
-          </div>
+        <div>
+          <header id="header">
+            <Header />
+            <Menu />
+          </header>
+          <Component {...matchProps} />
           <Footer />
-        </body>
+        </div>
         )}
     />
   );

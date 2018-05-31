@@ -12,7 +12,7 @@ export default function Skills({ skills }) {
       <div className="row">
         {
             skills.map(s => (
-              <div key={s.name} className="col-sm-6 col-md-3">
+              <div key={s.name} className="col-3">
                 <h3 className="text-center">{s.name}</h3>
                 <p>{s.description}</p>
                 <p className="text-center"><a href={s.url} className="btn btn-action">Read more</a></p>
