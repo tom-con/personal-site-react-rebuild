@@ -23,10 +23,10 @@ export default function CallToActionComponent({
     <div className="row section topspace">
       <div className="panel panel-cta">
         <div className="panel-body">
-          <div className="col-lg-8">
+          <div className="col col-8">
             {text}
           </div>
-          <div className="col-lg-4 text-right">
+          <div className="col col-4 text-right">
             {
               copy ?
                 <CopyToClipboard text={copyText}><p>{callText}</p></CopyToClipboard>
