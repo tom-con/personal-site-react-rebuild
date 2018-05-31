@@ -16,7 +16,7 @@ export default function QuoteComponent({ text, author, url }) {
   return (
 
     <div className="row section topspace">
-      <div className="col-md-12">
+      <div className="col-12">
         <p className="lead text-center text-muted"> {text} <br />--
           {author ? <a href={url}>{author}</a> : 'Unknown'}
         </p>
