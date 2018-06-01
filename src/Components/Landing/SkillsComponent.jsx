@@ -14,8 +14,9 @@ export default function Skills({ skills }) {
             skills.map(s => (
               <div key={s.name} className="col-3">
                 <h3 className="text-center">{s.name}</h3>
+                <h4 className="text-center"><i className={`fa fa-${s.icon} fa-2x`} /></h4>
                 <p>{s.description}</p>
-                <p className="text-center"><a href={s.url} className="btn btn-action">Read more</a></p>
+                {s.url ? <p className="text-center"><a href={s.url} className="btn btn-action">Read more</a></p> : null}
               </div>))
         }
       </div>
