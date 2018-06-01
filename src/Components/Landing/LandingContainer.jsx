@@ -17,10 +17,8 @@ export default function LandingContainer() {
           projects={[
             {
               title: 'VR File Explorer',
-              blogUrl: 'https://www.tconchie.com/blog',
-              img: 'https://s3.us-east-2.amazonaws.com/tconchie-assets/explorer.png',
+              imgUrl: 'https://s3.us-east-2.amazonaws.com/tconchie-assets/explorer.png',
               imgAlt: 'Screen Capture of VR File Explorer project.',
-              deployUrl: 'https://www.tconchie.com/deployments',
               videoUrl: 'https://www.youtube.com/watch?v=LBcvrbGrTrA',
             },
           ]}
