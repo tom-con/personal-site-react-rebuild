@@ -14,6 +14,8 @@ export default function Header() {
           backgroundColor: '#f4f4f4',
           backgroundPosition: 'top center',
         }}
+        bgWidth="100%"
+        bgHeight="auto"
       >
         <div style={{ height: '200px' }} />
         <h1 id="logo" className="text-center">
