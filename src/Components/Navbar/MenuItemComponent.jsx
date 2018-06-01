@@ -6,14 +6,23 @@ import {
 } from 'reactstrap';
 
 MenuItem.propTypes = {
+  id: PropTypes.string,
   to: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
 };
 
-export default function MenuItem({ to, name }) {
+MenuItem.defaultProps = {
+  id: '',
+  disabled: false,
+};
+
+export default function MenuItem({
+  id, to, name, disabled,
+}) {
   return (
     <NavItem>
-      <NavLink href={to}>{name}</NavLink>
+      <NavLink id={id} className={disabled ? 'disabled-link' : ''} disabled={disabled} href={to}>{name}</NavLink>
     </NavItem>
   );
 }

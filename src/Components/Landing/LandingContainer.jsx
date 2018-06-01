@@ -17,10 +17,8 @@ export default function LandingContainer() {
           projects={[
             {
               title: 'VR File Explorer',
-              blogUrl: 'https://www.tconchie.com/blog',
-              img: 'https://s3.us-east-2.amazonaws.com/tconchie-assets/explorer.png',
+              imgUrl: 'https://s3.us-east-2.amazonaws.com/tconchie-assets/explorer.png',
               imgAlt: 'Screen Capture of VR File Explorer project.',
-              deployUrl: 'https://www.tconchie.com/deployments',
               videoUrl: 'https://www.youtube.com/watch?v=LBcvrbGrTrA',
             },
           ]}
@@ -28,24 +26,36 @@ export default function LandingContainer() {
         <Skills
           skills={[
           {
-            name: 'Front-end Architecture w/React',
-            description: 'I truly love programming in React, for me its declarative nature, along with huge community support make it a quick choice for small and production apps alike.',
-            url: 'www.google.com',
+            icon: 'code',
+            name: 'Front-end: Architecture + Implementation',
+            description: 'I truly love programming in React, for me the declarative pattern, along with huge community support make it a quick choice for MVP and production apps alike. Particularly React+Redux+Sagas is probably my favorite front-end collab yet.',
           },
           {
-            name: 'API Design and Implementation',
-            description: 'I truly love programming in React, for me its declarative nature, along with huge community support make it a quick choice for small and production apps alike.',
-            url: 'www.google.com',
+            icon: 'road',
+            name: 'Data Lifecycle: REST APIS + Database Models',
+            description: 'A strong data model with supporting API design is one of the most satisfying components of building web apps. I always start my personal projects with detailed ERDs and then add API abstractions over top. You can\'t go wrong when you start from the bottom up.',
+          },
+          {
+            icon: 'terminal',
+            name: 'DevOps: Deployment + Containerization',
+            description: 'The advent of containers for ease of development is more than upon us, and the spread of containerization to be a fundamental part of deployment has only just begun. Give me that Docker, Kubernetes, Elastic Container Service, etc.',
+          },
+          {
+            icon: 'cubes',
+            name: 'Fundamental Tinkerer: VR/AR, IoT, Scripting',
+            description: 'I\'m excited by a lot of new tech, that\'s even truer when I get to play around with it on my own time. Right now I\'m loving the deep dive into embedded systems, especially with Elixir\'s Nerves framework.',
           },
         ]}
         />
         <CallToAction
+          title="Copy my email to your clipboard!"
+          icon="clipboard"
           text={
-            <p> Would you like to get in touch and <b>collab on something cool</b>?
-          Or we can discuss a project you&apos;d like me to work on.
-          Copy my email to your clipboard!
+            <p>
+              Would you like to get in touch and <b>collab on something cool</b>?
+              Or we can discuss a project you&apos;d like me to work on.
             </p>
-        }
+          }
           callText="Copy Email"
           copyText="tconchie@gmail.com"
           copy
