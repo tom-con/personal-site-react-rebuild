@@ -22,7 +22,7 @@ function FooterComponent() {
               <div className="widget-body">
                 <p className="follow-me-icons">
                   <a className="icon" href="https://www.github.com/tom-con"><i className="fa fa-github-square fa-2" /></a>
-                  <a className="icon" href="https://www.linkedin.com/in/tconchie"><i className="fa fa-linkedin-square fa-2" /></a>
+                  <a className="icon" href="https://www.linkedin.com/in/tomconchie"><i className="fa fa-linkedin-square fa-2" /></a>
                   <a className="icon" href="https://www.facebook.com/tconchie"><i className="fa fa-facebook-official fa-2" /></a>
                   <a className="icon" href="https://www.flickr.com/photos/tconchie/"><i className="fa fa-flickr fa-2" /></a>
                   <a className="icon" href="https://www.twitter.com/javascirpt/"><i className="fa fa-twitter-square fa-2" /></a>
