@@ -23,7 +23,6 @@ export default class MenuContainer extends Component {
   }
 
   toggleTooltip() {
-    console.log('attempt toggle');
     this.setState({
       blogTooltipIsOpen: !this.state.blogTooltipIsOpen,
     });

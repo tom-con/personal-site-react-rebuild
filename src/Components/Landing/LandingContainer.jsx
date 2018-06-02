@@ -56,7 +56,7 @@ export default function LandingContainer() {
               Or we can discuss a project you&apos;d like me to work on.
             </p>
           }
-          callText="Copy Email"
+          callText="Email"
           copyText="tconchie@gmail.com"
           copy
         />
